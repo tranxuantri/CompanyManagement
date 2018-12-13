@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Dec 13, 2018 11:00:58 AM by Hibernate Tools 5.3.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="project" dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Framework" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="framework">
+        <id name="idFramework" type="int">
+            <column name="idFramework"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="framework" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="framework"/>
+        </property>
+    </class>
+</hibernate-mapping>

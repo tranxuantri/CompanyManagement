@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Dec 13, 2018 11:00:58 AM by Hibernate Tools 5.3.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="project" dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.ListProject" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="list_project">
+        <id name="idProject" type="int">
+            <column name="idProject"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="idCustomer" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="idCustomer"/>
+        </property>
+        <property generated="never" lazy="false" name="detail" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="detail"/>
+        </property>
+        <property generated="never" lazy="false" name="room" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="room"/>
+        </property>
+        <property generated="never" lazy="false" name="pm" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="PM"/>
+        </property>
+        <property generated="never" lazy="false" name="starDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="starDate"/>
+        </property>
+        <property generated="never" lazy="false" name="endDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="endDate"/>
+        </property>
+        <property generated="never" lazy="false" name="domain" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="domain"/>
+        </property>
+        <property generated="never" lazy="false" name="framework" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="framework"/>
+        </property>
+        <property generated="never" lazy="false" name="database" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="database"/>
+        </property>
+        <property generated="never" lazy="false" name="programingLanguage" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="programingLanguage"/>
+        </property>
+        <property generated="never" lazy="false" name="status" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="status"/>
+        </property>
+    </class>
+</hibernate-mapping>
